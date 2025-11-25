@@ -1,0 +1,161 @@
+html, body
+{
+  margin: 0;
+  padding: 0;
+}
+header
+{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  grid-template-columns: 1fr 2fr 1fr; 
+  padding: 2px 30px;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+.logo img {
+  height: 40px;
+}
+
+header a
+{
+  color: black;
+  text-decoration: none;
+}
+
+header a :visited
+{
+  color: black;
+  text-decoration: none;
+}
+
+header a :active
+{
+  color: rgb(64, 64, 180);
+}
+
+header button
+{
+  width: 140px;
+  height: 30px;
+}
+
+.call
+{
+  background-color: white;
+  color: rgb(64, 64, 180);
+  border: 2px solid rgb(64, 64, 180);
+  border-radius: 5px;
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+}
+
+.call:hover {
+  background: rgb(64, 64, 180);
+  color: white;
+}
+
+.call :first-child
+{
+  text-align: left;
+}
+
+.call :nth-child(2)
+{
+  padding-top: 5px;
+  text-align: right;
+}
+
+.what
+{
+  background-color: green;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.what :first-child
+{
+  text-align: left;
+}
+
+.what :nth-child(2)
+{
+  padding-top: 5px;
+  text-align: right;
+}
+
+.what:hover {
+  background-color: white;
+  color: green;
+}
+
+ header :nth-child(3)
+{
+  display: flex;
+  flex-direction: row;
+} 
+
+nav
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* Footer styling starts here*/
+
+
+footer
+{
+  background-color: #101725;
+  color: white;
+  /* padding: 30px 20px; */
+}
+
+.foot
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 20px;
+}
+
+footer a
+{
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+footer ul
+{
+  margin:0;
+  padding: 0;
+}
+
+.ender
+{
+  margin: 30px 20px 70px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .foot{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 0px 20px; */
+  }
+  
+}
