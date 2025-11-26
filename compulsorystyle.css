@@ -48,15 +48,15 @@ header button
 .call
 {
   background-color: white;
-  color: rgb(64, 64, 180);
-  border: 2px solid rgb(64, 64, 180);
+  color: rgb(29, 78, 216);
+  border: 2px solid rgb(29, 78, 216);
   border-radius: 5px;
   display: grid; 
   grid-template-columns: 1fr 2fr; 
 }
 
 .call:hover {
-  background: rgb(64, 64, 180);
+  background: rgb(29, 78, 216);
   color: white;
 }
 
