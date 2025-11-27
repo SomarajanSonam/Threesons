@@ -1,7 +1,6 @@
 /* Styling for first class */
 
-body
-{
+body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -9,28 +8,25 @@ body
     "wdth" 100;
 }
 
-.first
-{
+.first {
   background-color: rgb(251, 252, 252);
   text-align: center;
   gap: 20px;
   padding: 70px 15px;
+  width: 100vw;
 }
 
-.first h2
-{
+.first h2 {
   font-weight: 800;
   font-size: 50px;
   gap: 10px;
 }
 
-.first p
-{
-  color:#6a6a6a
+.first p {
+  color: #6a6a6a
 }
 
-.first button
-{
+.first button {
   margin: 20px 5px;
   height: 40px;
   width: 150px;
@@ -39,58 +35,69 @@ body
   /* border: none; */
 }
 
-.first-quote
-{
+.first-quote {
   background-color: rgb(29, 78, 216);
   color: aliceblue;
   border: solid 2px rgb(29, 78, 216);
 }
 
-.first-call
-{
+.first-call {
   background-color: rgb(251, 252, 252);
   color: rgb(29, 78, 216);
   border: solid 2px rgb(29, 78, 216);
 }
 
-.first-quote:hover
-{
-  background-color:  rgb(19, 52, 142);
+.first-quote:hover {
+  background-color: rgb(19, 52, 142);
   border: solid 2px rgb(19, 52, 142);
   transform: translateY(1px);
 }
 
-.first-call:hover
-{
+.first-call:hover {
   border: solid 2px rgb(19, 52, 142);
   transform: translateY(1px);
-  color:  rgb(19, 52, 142);
+  color: rgb(19, 52, 142);
   background-color: rgb(225, 225, 233);
 }
 
 /* Styling for second */
 
-.second h2
-{
+.second h2 {
   font-size: 30px;
 }
 
-.second
-{
+.second {
   text-align: center;
   gap: 20px;
 }
 
-.product-range
-{
+.productrange {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
- }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
 
-.card
-{
-  height: 770px;
-  width: 600px;
+@media screen and (max-width: 1250px) {
+  .productrange {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .productrange {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
+.card {
+  height: 500px;
+  width: 300px;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
@@ -99,34 +106,30 @@ body
   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
 }
 
-.card:hover
-{
+.card:hover {
   box-shadow: 5px 5px 5px 5px rgb(185, 184, 184);
   transform: translate(2px 2px);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-.card img
-{
-  max-width:600px;
-  height:auto;
-  width:auto;
+.card img {
+  max-width: 300px;
+  height: auto;
+  width: auto;
   object-fit: contain;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.card img:hover
-{
+.card img:hover {
   transform: scale(0.98);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-.card button
-{
-  width: 550px;
+.card button {
+  width: 300px;
   height: 50px;
   background-color: white;
   color: rgb(29, 78, 216);
@@ -135,8 +138,7 @@ body
   font-weight: 700;
 }
 
-.card button:hover
-{
+.card button:hover {
   background-color: rgb(29, 78, 216);
   color: white;
   border: 1px solid rgb(29, 78, 216);
@@ -144,26 +146,22 @@ body
 
 /* Styling for the-why */
 
-.the-why
-{
+.the-why {
   text-align: center;
   gap: 20px;
   background-color: rgb(251, 252, 252);
-  padding:30px;
+  padding: 30px;
 }
 
-.the-why h2
-{
+.the-why h2 {
   font-size: 30px;
 }
 
-.the-why p
-{
-  color:#6a6a6a
+.the-why p {
+  color: #6a6a6a
 }
 
-.pic
-{
+.pic {
   text-align: center;
   /* border: 1px solid black; */
   padding: 10px;
@@ -171,16 +169,98 @@ body
   width: 30px;
   border-radius: 50%;
   background-color: rgb(219, 234, 254);
-  color:rgb(29, 78, 216);
+  color: rgb(29, 78, 216);
   margin: 0 auto;
+}
+
+/* styling for "industries we serve" class=industries */
+
+
+.industries h2 {
+  font-size: 30px;
+}
+
+.industries {
+  text-align: center;
+  gap: 20px;
+}
+
+.industries p {
+  color: #6a6a6a
+}
+
+.industry {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 40px auto;
+}
+
+@media screen and (max-width: 1250px){
+  .industry {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 650px)
+{
+  .industry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 40px auto;
+}
+}
+
+@media screen and (max-width: 350px)
+{
+  .industry {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 40px auto;
+}
+}
+
+.ind {
+  color: #4e4e4e;
+  height: 40px;
+  width: 190px;
+  align-items: center;
+  padding: 15px 10px 0px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(186, 186, 212);
+}
+
+.ind:hover {
+  box-shadow: 2px 2px 2px 2px rgb(186, 186, 212);
+  transform: scale(1.02);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Styling for testimonial section */
+
+.testimonials h2 {
+  font-size: 30px;
+}
+
+.testimonials 
+{
+  background-color: rgb(251, 252, 252);
+  text-align: center;
+  gap: 20px;
 }
 
 /* Styling for end-contact */
 
-.end-contact
-{
+.end-contact {
   background: #1D4ED8;
-  background: linear-gradient(90deg,rgba(29, 78, 216, 1) 0%, rgba(21, 87, 112, 1) 50%, rgba(21, 128, 61, 1) 100%);
+  background: linear-gradient(90deg, rgba(29, 78, 216, 1) 0%, rgba(21, 87, 112, 1) 50%, rgba(21, 128, 61, 1) 100%);
   text-align: center;
   gap: 10px;
   color: white;
